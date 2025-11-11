@@ -1,0 +1,363 @@
+:root {
+  --gold: #ffd966;
+  --bg-overlay: rgba(0, 0, 0, 0.55);
+  --red: #a00000e5;
+  --max-width: 780px;
+}
+
+/* RESET / base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased
+}
+
+body {
+  background: url("img/fundo.jpg") center/cover no-repeat fixed;
+  display: flex;
+  align-items: flex-start;
+  /* permite scroll começando no topo */
+  justify-content: center;
+  padding: 20px 20px 90px;
+  /* padding-bottom maior para que nada seja coberto */
+  color: #fff;
+  position: relative;
+  overflow: auto;
+  /* permite scroll */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* overlay blur para destacar o conteúdo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.6));
+  backdrop-filter: blur(3px) brightness(0.55);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* PARTICULAS (GPU-friendly, sem recriar indefinidamente) */
+.particle {
+  position: fixed;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 215, 102, 0.95) 0%, rgba(255, 215, 102, 0.25) 60%, transparent 100%);
+  box-shadow: 0 0 8px rgba(255, 215, 102, 0.28);
+  z-index: 1;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* animação única para partículas (infinite) */
+@keyframes rise {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-140vh);
+    opacity: 0;
+  }
+}
+
+/* TELA INICIAL (overlay) */
+#tela-inicial {
+  position: fixed;
+  inset: 0;
+  background: rgba(1, 7, 7, 0.842);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 8;
+  padding: 20px;
+}
+
+.card-inicial {
+  background: linear-gradient(-135deg, var(--red), rgb(0, 0, 0));
+  padding: 28px;
+  border-radius: 12px;
+  text-align: center;
+  width: calc(100% - 48px);
+  max-width: 420px;
+  box-shadow: 0 8px 30px rgb(71, 60, 0);
+  border: 1px solid rgb(255, 208, 0);
+}
+
+.card-inicial h2 {
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-size: 1.25rem
+}
+
+.card-inicial p {
+  color: #efefef;
+  margin-bottom: 14px;
+  font-size: 0.95rem
+}
+
+#start-btn {
+  background: linear-gradient(90deg, var(--gold), #d4a017);
+  color: #000;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(212, 160, 30, 0.22);
+  transition: 0.5s;
+
+}
+
+#start-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 26px rgba(212, 160, 30, 0.28);
+}
+
+/* MAIN LAYOUT */
+.hidden {
+  display: none;
+}
+
+main#main-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 28px auto;
+}
+
+/* foto + título */
+.bloco_foto-titulo {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(63, 47, 7, 0.39), rgb(0, 0, 0));
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgb(255, 208, 0);
+}
+
+
+.foto-formando {
+  width: 78px;
+  height: 78px;
+  min-width: 78px;
+  min-height: 78px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 215, 102, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06));
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 18px rgba(255, 215, 102, 0.12);
+}
+
+.foto-formando img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  /* garante formato circular */
+}
+
+/* título */
+.bloco-titulo h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 0.92rem;
+  color: #f3f3f3;
+  line-height: 1.2;
+}
+
+/* carta */
+.carta {
+  margin-top: 14px;
+  background: linear-gradient(135deg, rgba(63, 47, 7, 0.39), rgb(0, 0, 0));
+  padding: 18px;
+  border-radius: 14px;
+  color: #ffffff;
+  border: 1px solid rgba(235, 0, 0, 0.04);
+  border: 1px solid rgba(255, 208, 0, 0.938);
+  box-shadow: 0 0 12px var(--gold);
+  text-align: center;;
+}
+
+.carta p {
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+
+
+/* info */
+span {
+  color: rgb(255, 234, 47);
+
+  /* tamanho responsivo */
+  font-weight: bold;
+}
+
+.info {
+  margin: 6px 0;
+  font-size: 0.98rem;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 14px;
+  background: linear-gradient(60deg, black, var(--red));
+  box-shadow: 0 8px 30px rgb(0, 0, 0);
+  border: 2px solid rgb(255, 208, 0);
+}
+
+.info p { 
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+hrs {
+  font-weight: bold;
+}
+date {
+  font-weight: bold;
+}
+loc {
+  font-weight: bold;
+} 
+
+
+/* Wrapper isolador - evita que o transform de pais interfira */
+.map-button-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  perspective: 1200px;
+  position: relative;
+  z-index: 10;
+  overflow: visible !important;
+  transform: none !important;
+}
+
+/* Botão dourado */
+.map-button {
+  display: inline-block;
+  margin-top: 12px;
+  background: linear-gradient(90deg, var(--gold), #d4a017);
+  color: #000;
+  padding: 10px 22px;
+  border-radius: 900px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(212, 160, 30, 0.22);
+  transition: 0.5s;
+  position: relative;
+  z-index: 15;
+  pointer-events: auto;
+  transform-origin: center;
+  will-change: transform;
+}
+
+/* Efeito de hover — agora inquebrável */
+.map-button:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 12px 30px rgba(233, 171, 15, 0.45);
+  filter: brightness(1.05);
+}
+
+
+/* footer */
+.footer-note {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #ddd;
+  font-size: 0.92rem
+}
+
+/* small mute */
+.mute {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 6;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px)
+}
+
+.mute:hover {
+  background: rgba(0, 0, 0, 0.65)
+}
+
+/* --- ANIMAÇÕES "AUTOCONSTRUIR" (minimalista + cinematográfico) --- */
+/* itens começam escondidos; JS adiciona classe .reveal ao main-content e anima delays */
+.fade-item {
+  opacity: 0;
+  transform: translateY(18px);
+  will-change: transform, opacity;
+}
+
+main#main-content.reveal .fade-item {
+  animation: revealUp 900ms cubic-bezier(.2, .9, .3, 1) forwards;
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* responsivo */
+@media(min-width:720px) {
+  .foto-formando {
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+    min-height: 110px
+  }
+
+  .bloco-titulo h1 {
+    font-size: 1.5rem
+  }
+
+  .subtitle {
+    font-size: 1rem
+  }
+
+  .carta p {
+    font-size: 1.02rem
+  }
+}
