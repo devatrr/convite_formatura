@@ -221,32 +221,49 @@ span {
   margin: 6px 0;
   font-size: 0.98rem;
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap; /* permite quebrar linha */
+  justify-content: center; /* centraliza os itens */
+  gap: 10px;
   align-items: center;
-  padding: 10px;
+  padding: 10px 14px;
   border-radius: 14px;
   background: linear-gradient(60deg, black, var(--red));
   box-shadow: 0 8px 30px rgb(0, 0, 0);
   border: 2px solid rgb(255, 208, 0);
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box; /* impede vazamento */
 }
 
-.info p { 
-  margin-bottom: 2px;
-  margin-top: 2px;
+/* mantém boa proporção dos parágrafos */
+.info p {
+  margin: 2px;
   font-weight: 500;
   border-radius: 8px;
-  padding: 2px;
+  padding: 2px 6px;
+  white-space: normal; /* permite quebra de texto */
+  word-break: break-word;
 }
 
-hrs {
+/* estilização das tags personalizadas */
+hrs, date, loc {
   font-weight: bold;
+  color: var(--gold);
 }
-date {
-  font-weight: bold;
+
+/* --- Responsividade adicional para telas menores --- */
+@media (max-width: 720px) {
+  .info {
+    flex-direction: column; /* empilha o conteúdo */
+    gap: 6px;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .info p {
+    width: 100%;
+  }
 }
-loc {
-  font-weight: bold;
-} 
 
 
 /* Wrapper isolador - evita que o transform de pais interfira */
