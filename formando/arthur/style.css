@@ -1,7 +1,7 @@
 :root {
   --gold: #ffd966;
   --bg-overlay: rgba(0, 0, 0, 0.55);
-  --red: #a00000e5;
+  --red: #d10000;
   --max-width: 780px;
 }
 
@@ -40,7 +40,7 @@ body::before {
   position: fixed;
   inset: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.6));
-  backdrop-filter: blur(3px) brightness(0.55);
+  backdrop-filter: blur(3px) brightness(0.7);
   z-index: 0;
   pointer-events: none;
 }
@@ -73,8 +73,8 @@ body::before {
 #tela-inicial {
   position: fixed;
   inset: 0;
-  background: rgba(1, 7, 7, 0.842);
-  backdrop-filter: blur(6px);
+  background: rgba(7, 1, 1, 0.349);
+  backdrop-filter: blur(1px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +89,7 @@ body::before {
   text-align: center;
   width: calc(100% - 48px);
   max-width: 420px;
-  box-shadow: 0 8px 30px rgb(71, 60, 0);
+  box-shadow: 0 8px 30px rgb(180, 153, 0);
   border: 1px solid rgb(255, 208, 0);
 }
 
@@ -143,8 +143,8 @@ main#main-content {
   align-items: center;
   padding: 12px;
   border-radius: 14px;
-  background: linear-gradient(180deg, rgba(63, 47, 7, 0.39), rgb(0, 0, 0));
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(180deg, rgb(83, 55, 1), rgb(0, 0, 0));
+  box-shadow: 0 8px 30px rgb(112, 95, 0);
   border: 2px solid rgb(255, 208, 0);
 }
 
@@ -195,7 +195,6 @@ main#main-content {
   padding: 18px;
   border-radius: 14px;
   color: #ffffff;
-  border: 1px solid rgba(235, 0, 0, 0.04);
   border: 1px solid rgba(255, 208, 0, 0.938);
   box-shadow: 0 0 12px var(--gold);
   text-align: center;;
@@ -228,7 +227,7 @@ span {
   padding: 10px 14px;
   border-radius: 14px;
   background: linear-gradient(60deg, black, var(--red));
-  box-shadow: 0 8px 30px rgb(0, 0, 0);
+  box-shadow: 0 8px 30px rgba(255, 230, 0, 0.432);
   border: 2px solid rgb(255, 208, 0);
   text-align: center;
   max-width: 100%;
