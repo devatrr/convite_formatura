@@ -40,7 +40,7 @@ body::before {
   position: fixed;
   inset: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.6));
-  backdrop-filter: blur(3px) brightness(0.55);
+  backdrop-filter: blur(3px) brightness(0.75);
   z-index: 0;
   pointer-events: none;
 }
@@ -74,7 +74,7 @@ body::before {
   position: fixed;
   inset: 0;
   background: rgba(1, 7, 7, 0.842);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(3px);
   display: flex;
   align-items: center;
   justify-content: center;
