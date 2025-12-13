@@ -52,7 +52,8 @@ Nessa opção você terá direito a todos os benefícios do Convite Essencial, a
 - **HTML5** — Estrutura do convite  
 - **CSS3** — Estilo e animações  
 - **JavaScript** — Lógica, personalização e música  
-- **GitHub Pages** — Hospedagem gratuita do projeto  
+- **GitHub Pages** — Hospedagem gratuita do projeto
+- **Google.Forms** - Informacoes dos pedidos/Controle de vendas   
 
 ---
 
@@ -68,7 +69,10 @@ Cada formando pode editar facilmente seu convite preenchendo o formulario - goog
 ## 🚀 Como Visualizar o Convite
 
 1. Clique no link abaixo para acessar a página:
-   👉 [Acessar Convite](https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO)
+
+🔗 https://devatrr.github.io/convite_formatura/CONVITE INDIVIDUAL 
+-- Cada formando recebeu seu link pronto para uso com suas infos escolhidas 
+de acordo com o modelo de convite.
 
 ---
 
