@@ -53,7 +53,7 @@ Nessa opção você terá direito a todos os benefícios do Convite Essencial, a
 - **CSS3** — Estilo e animações  
 - **JavaScript** — Lógica, personalização e música  
 - **GitHub Pages** — Hospedagem gratuita do projeto
-- **Google.Forms** - Informacoes dos pedidos/Controle de vendas   
+- **Google.Forms** - Informações dos pedidos/Controle de vendas   
 
 ---
 
