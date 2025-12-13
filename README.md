@@ -11,12 +11,12 @@ Este convite foi desenvolvido com o objetivo de unir **emoção, tecnologia e de
 Cada detalhe — da música à animação — foi pensado para representar a **história, os valores e as conquistas** do formando. O projeto foi vendido aos 
 formandos CEPMG do ano de 2025. Foi utilizado como forma de venda e organização a seguinte mensagem via WhatsApp:
 
->Olá pessoal! Todos bem ? Espero que sim !
+*Olá pessoal! Todos bem ? Espero que sim !
 Acredito que muitos estão animados…emocionados…. ou até mesmo ansiosos para o grande dia da Formatura Militar. Além de todos os movimentos executados, o que fará de uma data como esta mais especial será a presença e prestígio das pessoas que amamos! Desse modo, nada mais justo do que fazer um convite aos familiares e amigos de uma forma memorável! 💌✨
 
  Para tanto, apresento as senhores a chance de fazer um *convite* Funcional, *Elegante* e *Único* às pessoas que queremos que celebrem esse início de uma nova jornada em nossa *História!*🎓✨ 
 
-*O Convite Digital Interativo!*
+>*O Convite Digital Interativo!*
 Nesse modelo de convite temos duas opções de disponíveis!
 
 
@@ -43,7 +43,7 @@ Ficou interessado ?? *Clique no link* abaixo e preencha o *formulário* de acord
 📝 https://forms.gle/485Jw31gkERpnV9o6
 
 Dúvidas - chame no suporte 👇
-📲 https://wa.link/7tv7ul <
+📲 https://wa.link/7tv7ul*
 
 ---
 
