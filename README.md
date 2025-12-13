@@ -70,7 +70,8 @@ Cada formando pode editar facilmente seu convite preenchendo o formulario - goog
 
 1. Clique no link abaixo para acessar a página:
 
-🔗 https://devatrr.github.io/convite_formatura/CONVITE INDIVIDUAL 
+🔗 https://devatrr.github.io/convite_formatura/ CONVITE INDIVIDUAL 
+
 -- Cada formando recebeu seu link pronto para uso com suas infos escolhidas 
 de acordo com o modelo de convite.
 
