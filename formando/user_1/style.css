@@ -20,7 +20,7 @@ body {
 }
 
 body {
-  background: url("img/fundo.jpg") center/cover no-repeat fixed;
+  background: url("/img/fundo.jpg") center/cover no-repeat fixed; 
   display: flex;
   align-items: flex-start;
   /* permite scroll começando no topo */
