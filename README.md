@@ -34,7 +34,7 @@ Nessa opção você terá direito a todos os benefícios do Convite Essencial, a
 
 
 >*Prévia do modelo base*:
->🔗 https://devatrr.github.io/convite_formatura/
+>🔗 https://devatrr.github.io/convite_formatura
 
 
 >Ficou interessado ?? *Clique no link* abaixo e preencha o *formulário* de acordo com a opção desejada, e faça um *Convite Especial* para essa data *Inesquecível*🎓🌟✨
@@ -70,7 +70,7 @@ Cada formando pode editar facilmente seu convite preenchendo o formulario - goog
 
 1. Clique no link abaixo para acessar a página:
 
-🔗 https://devatrr.github.io/convite_formatura/ CONVITE INDIVIDUAL 
+🔗 https://devatrr.github.io/convite_formatura/formando/user_1 CONVITE INDIVIDUAL 
 
 -- Cada formando recebeu seu link pronto para uso com suas infos escolhidas 
 de acordo com o modelo de convite.
